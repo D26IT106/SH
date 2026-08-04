@@ -1,29 +1,157 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Dashboard</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
 
-<h1>Student Dashboard</h1>
+    <!-- Header -->
 
-<ul>
+    <header>
 
-<li><a href="attendance.html">Attendance</a></li>
+        <div class="logo">
 
-<li><a href="assignment.html">Assignments</a></li>
+            <img src="../images/logo.png" alt="Logo">
 
-<li><a href="timetable.html">Timetable</a></li>
+            <div class="logo-text">
+                <h1>Student Portal</h1>
+                <p>Dashboard</p>
+            </div>
 
-<li><a href="notice.html">Notice Board</a></li>
+        </div>
 
-<li><a href="profile.html">Profile</a></li>
+        <nav>
 
-</ul>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="attendance.html">Attendance</a></li>
+                <li><a href="timetable.html">Time Table</a></li>
+                <li><a href="assignment.html">Assignment</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="index.html">Logout</a></li>
 
-<a href="index.html">Home</a>
+            </ul>
 
+        </nav>
+
+    </header>
+
+    <main>
+
+        <!-- Welcome -->
+
+        <section class="dashboard-banner">
+
+            <h2>Welcome, Student 👋</h2>
+
+            <p>
+                Here is a quick overview of your academic information.
+            </p>
+
+        </section>
+
+        <!-- Dashboard Cards -->
+
+        <div class="dashboard-cards">
+
+            <div class="card">
+
+                <h3>Attendance</h3>
+
+                <p class="number">92%</p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Subjects</h3>
+
+                <p class="number">6</p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Assignments</h3>
+
+                <p class="number">4 Pending</p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>CGPA</h3>
+
+                <p class="number">8.75</p>
+
+            </div>
+
+        </div>
+
+        <!-- Quick Actions -->
+
+        <section>
+
+            <h2>Quick Actions</h2>
+
+            <div class="quick-actions">
+
+                <a href="attendance.html">Attendance</a>
+
+                <a href="timetable.html">Time Table</a>
+
+                <a href="result.html">Results</a>
+
+                <a href="profile.html">Profile</a>
+
+            </div>
+
+        </section>
+
+        <!-- Recent Activity -->
+
+        <section>
+
+            <h2>Recent Activity</h2>
+
+            <table>
+
+                <tr>
+                    <th>Date</th>
+                    <th>Activity</th>
+                    <th>Status</th>
+                </tr>
+
+                <tr>
+                    <td>02 Aug 2026</td>
+                    <td>Assignment Submitted</td>
+                    <td>Completed</td>
+                </tr>
+
+                <tr>
+                    <td>03 Aug 2026</td>
+                    <td>Attendance Updated</td>
+                    <td>Present</td>
+                </tr>
+
+                <tr>
+                    <td>04 Aug 2026</td>
+                    <td>Internal Marks Uploaded</td>
+                    <td>Available</td>
+                </tr>
+
+            </table>
+
+        </section>
+
+    </main>
+<footer>
+    <p>&copy; 2026 StudentHub Portal. All Rights Reserved.</p>
+</footer>
 </body>
+
 </html>

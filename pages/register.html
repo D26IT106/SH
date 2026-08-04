@@ -1,27 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
     <title>Register</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
 
-<h1>Student Registration</h1>
+    <!-- Header -->
 
-<form>
+    <header>
 
-<input type="text" placeholder="Full Name"><br><br>
+        <nav>
+            <ul>
+                <li><a href="../pages/index.html">Home</a></li>
+            </ul>
+        </nav>
 
-<input type="email" placeholder="Email"><br><br>
+    </header>
 
-<input type="password" placeholder="Password"><br><br>
+    <!-- Main Content -->
 
-<button>Register</button>
+    <main>
 
-</form>
+        <div class="login-container">
 
-<a href="index.html">Home</a>
+            <h2>Student Registration</h2>
+
+            <form>
+
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" placeholder="Enter Full Name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="Enter Email" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Create Password" required>
+
+                <button type="submit">Register</button>
+
+            </form>
+
+            <div class="back-link">
+                <a href="../index.html">← Back to Home</a>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer>
+    <p>&copy; 2026 StudentHub Portal. All Rights Reserved.</p>
+    </footer>
 
 </body>
+
 </html>

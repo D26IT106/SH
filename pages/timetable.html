@@ -1,21 +1,88 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Timetable</title>
-<link rel="stylesheet" href="css/style.css">
+    <title>Timetable</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
 
-<h1>Class Timetable</h1>
+<header>
 
-<p>Monday - Web Development</p>
+    <div class="logo">
+        <img src="../images/logo.png" alt="StudentHub Logo">
+        <div class="logo-text">
+            <h1>Student Portal</h1>
+            <p>Student Management System</p>
+        </div>
+    </div>
 
-<p>Tuesday - Python</p>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="attendance.html">Attendance</a></li>
+            <li><a href="assignment.html">Assignment</a></li>
+            <li><a href="notice.html">Notice</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
-<p>Wednesday - Java</p>
+</header>
 
-<a href="dashboard.html">Dashboard</a>
+<main>
 
+<section>
+
+<h2>Class Timetable</h2>
+
+<table>
+
+<tr>
+    <th>Day</th>
+    <th>Subject</th>
+</tr>
+
+<tr>
+    <td>Monday</td>
+    <td>Web Development</td>
+</tr>
+
+<tr>
+    <td>Tuesday</td>
+    <td>Python</td>
+</tr>
+
+<tr>
+    <td>Wednesday</td>
+    <td>Java</td>
+</tr>
+
+<tr>
+    <td>Thursday</td>
+    <td>Database Management</td>
+</tr>
+
+<tr>
+    <td>Friday</td>
+    <td>Computer Networks</td>
+</tr>
+
+</table>
+
+<br>
+
+<button onclick="location.href='dashboard.html'">
+    Back to Dashboard
+</button>
+
+</section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 StudentHub Portal. All Rights Reserved.</p>
+</footer>
 </body>
 </html>
