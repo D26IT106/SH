@@ -1,0 +1,18 @@
+[
+    {
+        "question": "How can I register for an event?",
+        "answer": "Open the Events section and click the Register button for the event."
+    },
+    {
+        "question": "How can I check my attendance?",
+        "answer": "Open the Attendance page from your StudentHub dashboard."
+    },
+    {
+        "question": "How can I update my profile?",
+        "answer": "Go to the Profile page and edit your personal information."
+    },
+    {
+        "question": "Where can I see college notices?",
+        "answer": "Open the Notice section from the StudentHub navigation menu."
+    }
+]

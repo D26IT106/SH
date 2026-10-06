@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "Priya Shah",
+        "course": "Diploma IT",
+        "year": "2nd Year",
+        "email": "priya@example.com"
+    },
+    {
+        "id": 2,
+        "name": "Hetvi Parmar",
+        "course": "Diploma IT",
+        "year": "2nd Year",
+        "email": "hetvi@example.com"
+    },
+    {
+        "id": 3,
+        "name": "Saniya Patel",
+        "course": "Diploma CE",
+        "year": "3rd Year",
+        "email": "saniya@example.com"
+    }
+]
