@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub - Register</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <div class="login-container">
+
+        <h2>Student Registration</h2>
+
+        <form
+            id="registration-form"
+            action="../php/process_registration.php"
+            method="POST"
+        >
+
+            <label for="fullname">Full Name</label>
+            <input
+                type="text"
+                id="fullname"
+                name="studentName"
+                placeholder="Enter Full Name"
+                required
+                pattern="[A-Za-z ]{2,50}"
+                autocomplete="name"
+            >
+
+            <small id="fullname-error" class="error-message"></small>
+
+
+            <label for="email">Email Address</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter Email Address"
+                required
+                autocomplete="email"
+            >
+
+            <small id="email-error" class="error-message"></small>
+
+
+            <label for="mobile">Mobile Number</label>
+            <input
+                type="tel"
+                id="mobile"
+                name="mobile"
+                placeholder="Enter 10-digit Mobile Number"
+                maxlength="10"
+                required
+                pattern="[6-9][0-9]{9}"
+                autocomplete="tel"
+            >
+
+            <small id="mobile-error" class="error-message"></small>
+
+
+            <label for="password">Password</label>
+
+            <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Create Password"
+                minlength="8"
+                required
+                autocomplete="new-password"
+            >
+
+            <div id="password-strength"
+                class="password-strength">
+            </div>
+
+            <small class="password-hint">
+                Minimum 8 characters with uppercase, lowercase,
+                number & special character.
+            </small>
+
+            <small id="password-error"
+                class="error-message"></small>
+
+
+            <label for="confirm-password">Confirm Password</label>
+            <input
+                type="password"
+                id="confirm-password"
+                name="confirmPassword"
+                placeholder="Confirm Password"
+                minlength="8"
+                required
+                autocomplete="new-password"
+            >
+
+            <small id="confirm-password-error" class="error-message"></small>
+
+
+            <label for="course">Course</label>
+            <select
+                id="course"
+                name="course"
+                required
+            >
+                <option value="">-- Select Course --</option>
+                <option value="Diploma IT">Diploma IT</option>
+                <option value="Diploma CE">Diploma CE</option>
+                <option value="B.Tech IT">B.Tech IT</option>
+                <option value="B.Tech CE">B.Tech CE</option>
+                <option value="BCA">BCA</option>
+            </select>
+
+            <small id="course-error" class="error-message"></small>
+
+
+            <label for="year">Year</label>
+            <select
+                id="year"
+                name="year"
+                required
+            >
+                <option value="">-- Select Year --</option>
+                <option value="1st Year">1st Year</option>
+                <option value="2nd Year">2nd Year</option>
+                <option value="3rd Year">3rd Year</option>
+                <option value="4th Year">4th Year</option>
+            </select>
+
+            <small id="year-error" class="error-message"></small>
+
+
+            <label>Gender</label>
+
+            <div class="gender-options">
+
+                <label>
+                    <input
+                        type="radio"
+                        name="gender"
+                        value="Male"
+                        required
+                    >
+                    Male
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="gender"
+                        value="Female"
+                    >
+                    Female
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="gender"
+                        value="Other"
+                    >
+                    Other
+                </label>
+
+            </div>
+
+            <small id="gender-error" class="error-message"></small>
+
+
+            <div class="terms">
+
+                <label>
+                    <input
+                        type="checkbox"
+                        id="terms"
+                        name="terms"
+                        required
+                    >
+                    I agree to the Terms & Conditions
+                </label>
+
+            </div>
+
+            <small id="terms-error" class="error-message"></small>
+
+
+            <button type="submit">
+                Register
+            </button>
+
+        </form>
+
+
+        <div id="view-registrations">
+            <a href="../php/view_registrations.php">
+                View Registered Students
+            </a>
+        </div>
+
+
+        <div class="back-link">
+            <a href="index.html">
+                ← Back to Home
+            </a>
+        </div>
+
+    </div>
+
+</main>
+
+
+<footer>
+    <p>&copy; 2026 StudentHub Portal. All Rights Reserved.</p>
+</footer>
+
+
+<script src="../js/script.js"></script>
+
+</body>
+</html>

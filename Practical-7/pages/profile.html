@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Profile - StudentHub</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header>
+
+        <div class="logo">
+
+            <img src="../images/logo.png" alt="StudentHub Logo">
+
+            <div class="logo-text">
+
+                <h1>Student Portal</h1>
+
+                <p>Profile</p>
+
+            </div>
+
+        </div>
+
+        <nav>
+
+            <ul>
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="dashboard.html">Dashboard</a>
+                </li>
+
+                <li>
+                    <a href="attendance.html">Attendance</a>
+                </li>
+
+                <li>
+                    <a href="timetable.html">Time Table</a>
+                </li>
+
+                <li>
+                    <a href="assignment.html">Assignment</a>
+                </li>
+
+                <li>
+                    <a href="profile.html" class="active">
+                        Profile
+                    </a>
+                </li>
+
+                <li>
+                    <a href="notice.html">Notice</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Main -->
+
+    <main>
+
+        <!-- My Profile -->
+
+        <section class="profile-container">
+
+            <div class="profile-header">
+
+                <img
+                    src="../images/user.png"
+                    alt="Student Profile Picture"
+                >
+
+                <h2>Jignyasa Patil</h2>
+
+                <p>Information Technology</p>
+
+            </div>
+
+
+            <!-- Profile Details -->
+
+            <div class="profile-details">
+
+                <div class="profile-item">
+
+                    <span class="profile-icon">🆔</span>
+
+                    <h3>Student ID</h3>
+
+                    <p>D26IT106</p>
+
+                </div>
+
+
+                <div class="profile-item">
+
+                    <span class="profile-icon">💻</span>
+
+                    <h3>Department</h3>
+
+                    <p>Information Technology</p>
+
+                </div>
+
+
+                <div class="profile-item">
+
+                    <span class="profile-icon">📚</span>
+
+                    <h3>Semester</h3>
+
+                    <p>Semester 3</p>
+
+                </div>
+
+
+                <div class="profile-item">
+
+                    <span class="profile-icon">📧</span>
+
+                    <h3>Email</h3>
+
+                    <p>123@gmail.com</p>
+
+                </div>
+
+
+                <div class="profile-item">
+
+                    <span class="profile-icon">📱</span>
+
+                    <h3>Phone</h3>
+
+                    <p>9876543210</p>
+
+                </div>
+
+
+                <div class="profile-item">
+
+                    <span class="profile-icon">🩸</span>
+
+                    <h3>Blood Group</h3>
+
+                    <p>O+</p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Profile Buttons -->
+
+            <div class="profile-button">
+
+                <button type="button">
+                    Edit Profile
+                </button>
+
+                <br><br>
+
+                <button
+                    type="button"
+                    id="search-student-button"
+                >
+                    🔍 Search Student Profiles
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             SEARCH OTHER STUDENTS
+        ====================================================== -->
+
+        <section
+            class="student-directory"
+            id="student-directory"
+            style="display: none;"
+        >
+
+            <div class="section-heading">
+
+                <div class="section-icon">
+                    👨‍🎓
+                </div>
+
+                <div>
+
+                    <h2>Search Student Profiles</h2>
+
+                    <p>
+                        Search for other students in StudentHub.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Search -->
+
+            <div class="student-controls">
+
+                <input
+                    type="text"
+                    id="studentSearch"
+                    placeholder="🔍 Search by name, course, year or email..."
+                    aria-label="Search student profiles"
+                >
+
+            </div>
+
+
+            <!-- Student Results -->
+
+            <div
+                id="studentList"
+                class="student-list"
+            >
+
+                <p class="loading">
+                    Loading student profiles...
+                </p>
+
+            </div>
+
+
+            <!-- Pagination -->
+
+            <div
+                id="studentPagination"
+                class="pagination"
+            ></div>
+
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            &copy; 2026 StudentHub Portal.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+
+    <script src="../js/script.js"></script>
+
+
+    <!-- Search Student Button Script -->
+
+    <script>
+
+        const searchStudentButton =
+            document.getElementById(
+                "search-student-button"
+            );
+
+        const studentDirectory =
+            document.getElementById(
+                "student-directory"
+            );
+
+
+        if (
+            searchStudentButton &&
+            studentDirectory
+        ) {
+
+            searchStudentButton.addEventListener(
+                "click",
+                function () {
+
+                    if (
+                        studentDirectory.style.display ===
+                        "none"
+                    ) {
+
+                        studentDirectory.style.display =
+                            "block";
+
+                        searchStudentButton.innerText =
+                            "✕ Hide Student Profiles";
+
+                        studentDirectory.scrollIntoView({
+                            behavior: "smooth"
+                        });
+
+                    } else {
+
+                        studentDirectory.style.display =
+                            "none";
+
+                        searchStudentButton.innerText =
+                            "🔍 Search Student Profiles";
+
+                    }
+
+                }
+            );
+
+        }
+
+    </script>
+
+</body>
+
+</html>
