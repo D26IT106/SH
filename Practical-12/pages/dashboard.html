@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>StudentHub - Dashboard</title>
+
+    <link
+        rel="stylesheet"
+        href="../css/style.css">
+
+</head>
+
+
+<body>
+
+<header>
+
+    <div class="logo">
+
+        <img
+            src="../images/logo.png"
+            alt="StudentHub Logo">
+
+        <div class="logo-text">
+
+            <h1>StudentHub</h1>
+
+            <p>Student Dashboard</p>
+
+        </div>
+
+    </div>
+
+
+    <nav>
+
+        <ul>
+
+            <li>
+                <a href="index.html">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a
+                    href="dashboard.html"
+                    class="active">
+                    Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="attendance.html">
+                    Attendance
+                </a>
+            </li>
+
+            <li>
+                <a href="timetable.html">
+                    Time Table
+                </a>
+            </li>
+
+            <li>
+                <a href="assignment.html">
+                    Assignment
+                </a>
+            </li>
+
+            <li>
+                <a href="profile.html">
+                    Profile
+                </a>
+            </li>
+
+            <li>
+                <a href="index.html">
+                    Logout
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+
+    <!-- DASHBOARD WELCOME -->
+
+    <section class="dashboard-banner">
+
+        <div>
+
+            <p class="small-heading">
+                STUDENT DASHBOARD
+            </p>
+
+            <h2>
+                Welcome, Student 👋
+            </h2>
+
+            <p>
+                Here is a quick overview of your academic
+                information and upcoming campus events.
+            </p>
+
+        </div>
+
+        <div class="dashboard-icon">
+            🎓
+        </div>
+
+    </section>
+
+
+    <!-- DASHBOARD CARDS -->
+
+    <div class="dashboard-cards">
+
+        <div class="card">
+
+            <span class="card-icon">
+                📊
+            </span>
+
+            <h3>
+                Attendance
+            </h3>
+
+            <p class="number">
+                92%
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <span class="card-icon">
+                📚
+            </span>
+
+            <h3>
+                Subjects
+            </h3>
+
+            <p class="number">
+                6
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <span class="card-icon">
+                📝
+            </span>
+
+            <h3>
+                Assignments
+            </h3>
+
+            <p class="number">
+                4 Pending
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <span class="card-icon">
+                ⭐
+            </span>
+
+            <h3>
+                CGPA
+            </h3>
+
+            <p class="number">
+                8.75
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- QUICK ACTIONS -->
+
+    <section class="dashboard-section">
+
+        <h2>
+            Quick Actions
+        </h2>
+
+        <div class="quick-actions">
+
+            <a href="attendance.html">
+                📊 Attendance
+            </a>
+
+            <a href="timetable.html">
+                📅 Time Table
+            </a>
+
+            <a href="#">
+                📈 Results
+            </a>
+
+            <a href="profile.html">
+                👤 Profile
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- RECENT ACTIVITY -->
+
+    <section class="dashboard-section">
+
+        <h2>
+            Recent Activity
+        </h2>
+
+        <div class="table-container">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Date</th>
+
+                        <th>Activity</th>
+
+                        <th>Status</th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+                    <tr>
+
+                        <td>
+                            02 Aug 2026
+                        </td>
+
+                        <td>
+                            Assignment Submitted
+                        </td>
+
+                        <td>
+                            <span class="status completed">
+                                Completed
+                            </span>
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>
+                            03 Aug 2026
+                        </td>
+
+                        <td>
+                            Attendance Updated
+                        </td>
+
+                        <td>
+                            <span class="status available">
+                                Present
+                            </span>
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>
+                            04 Aug 2026
+                        </td>
+
+                        <td>
+                            Internal Marks Uploaded
+                        </td>
+
+                        <td>
+                            <span class="status available">
+                                Available
+                            </span>
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         EVENTS FROM JSON
+    ================================================== -->
+
+    <section class="dashboard-section events-section">
+
+        <div class="section-heading">
+
+            <span class="section-icon">
+                🎉
+            </span>
+
+            <div>
+
+                <h2>
+                    Upcoming Events
+                </h2>
+
+                <p>
+                    Discover workshops, competitions and
+                    campus activities.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- CONTROLS -->
+
+        <div class="event-controls">
+
+            <input
+                type="text"
+                id="eventSearch"
+                placeholder="🔍 Search events...">
+
+
+            <select id="eventFilter">
+
+                <option value="all">
+                    All Categories
+                </option>
+
+            </select>
+
+
+            <select id="eventSort">
+
+                <option value="default">
+                    Sort By
+                </option>
+
+                <option value="titleAsc">
+                    Name A-Z
+                </option>
+
+                <option value="titleDesc">
+                    Name Z-A
+                </option>
+
+                <option value="dateAsc">
+                    Date Old-New
+                </option>
+
+                <option value="dateDesc">
+                    Date New-Old
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <!-- DYNAMIC EVENTS -->
+
+        <div
+            id="eventList"
+            class="event-list">
+
+            <p class="loading">
+                Loading events...
+            </p>
+
+        </div>
+
+
+        <!-- PAGINATION -->
+
+        <div
+            id="eventPagination"
+            class="pagination">
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+<footer>
+
+    <p>
+        &copy; 2026 StudentHub Portal.
+        All Rights Reserved.
+    </p>
+
+</footer>
+
+
+<script src="../js/script.js"></script>
+
+</body>
+
+</html>
