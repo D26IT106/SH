@@ -103,6 +103,12 @@ if ($_SESSION["user_role"] !== "admin") {
     <h1>Welcome, <?= htmlspecialchars($_SESSION["user_name"]) ?>!</h1>
     <p>Manage and monitor the StudentHub portal.</p>
 
+    <p>
+        <a href="../php/student_management.php">
+            Manage Students
+        </a>
+    </p>
+
     <div class="cards">
         <div class="card">
             <h3>Students</h3>
