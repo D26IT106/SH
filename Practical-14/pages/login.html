@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+<main>
+    <div class="login-container">
+
+        <h2>Login</h2>
+
+        <form action="../php/process_login.php" method="POST">
+
+        <label for="email">Email Address</label>
+        <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter Email Address"
+            autocomplete="username"
+            required
+        >
+
+        <label for="password">Password</label>
+        <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter Password"
+            autocomplete="current-password"
+            required
+        >
+
+        <button type="submit">Login</button>
+
+        </form>
+
+        <div class="back-link">
+            <a href="index.html">← Back to Home</a>
+        </div>
+
+    </div>
+</main>
+
+    <footer>
+    <p>&copy; 2026 StudentHub Portal. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
